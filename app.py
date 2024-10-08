@@ -4,7 +4,8 @@ import pandas as pd
 import plotly.express as px
 
 st.set_page_config(layout='wide')
-
+st.title("Indian Sencus")
+st.text("Choose Options From Side Bar")
 df=pd.read_csv('india.csv')
 list_of_states=list(df['State'].unique())
 list_of_states.insert(0,'Overall India')
